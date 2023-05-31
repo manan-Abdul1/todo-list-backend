@@ -12,5 +12,5 @@ const dbconfig = require('./db');
 const taskRoutes = require('./routes/taskRoutes');
 
 
-app.use('/', taskRoutes);
+app.use('/api', taskRoutes);
 app.listen(port, ()=> console.log("server started",port))

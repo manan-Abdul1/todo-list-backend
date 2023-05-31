@@ -13,7 +13,7 @@ router.get('/tasks', async (req, res) => {
 });
 
 // Add a new task
-router.post('/api/tasks', async (req, res) => {
+router.post('/tasks', async (req, res) => {
   try {
     const newTask = new Task({
       title: req.body.title,

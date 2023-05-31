@@ -2,15 +2,15 @@
   "version": 2,
   "name": "todo-list-backend",
   "builds": [
-    { 
+    {
       "src": "server.js",
-      "use": "@vercel/node" 
+      "use": "@vercel/node"
     }
   ],
   "routes": [
-    { 
-      "src": "/(.*)", 
-      "dest": "./server.js" 
+    {
+      "src": "/api/(.*)",
+      "dest": "./server.js"
     }
   ]
 }
